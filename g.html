@@ -1,0 +1,24 @@
+<h4 class="likes">3,484 likes</h4>
+    <h4 class="message"><b>online_tutorials</b>Thank You for Your Love and Support  <span>#cards</span> <span> #HTML</span> <span>#css</span></h4>
+  <h4 class="comments">View all 245 comments</h4>
+  <div class="addComments">
+    <div class="userImg">
+      <img src="user.jpg" class="cover">
+    </div>
+    <input type="text" class="text" placeholder="Add a Comment.....">
+  </div>
+  <h5 class="postTime">4 hours ago</h5>
+  </div>
+  <script>
+    function likeButton(){
+      let heart = document.querySelector('.heart');
+      let likes = document.querySelector('.likes');
+      if (heart.src.match("heart.png")){
+        heart.src = "heart_red.png";
+        likes.innerHTML = "3864 likes";
+      }else{
+        heart.src = "heart.png";
+        likes.innerHTML = "3865 likes";
+      }
+    }
+  </script>
